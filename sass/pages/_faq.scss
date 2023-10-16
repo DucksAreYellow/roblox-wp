@@ -1,0 +1,119 @@
+.page-template-page-faq,
+.page-template-page-apm,
+.page-template-page-research,
+.page-template-page-civility-and-safety-resources,
+.page-template-page-partnerships {
+  background-color: $black-background;
+
+  .slick-arrow:focus {
+    outline-color: #0f61db;
+    outline-style: solid;
+  }
+
+  .news-detail {
+    padding-bottom: 40px;
+    .page-details {
+      padding: 0;
+    }
+  }
+  .accordion {
+    border-bottom: 1px solid $gray_line;
+    max-width: 896px;
+    margin: 28px auto 100px;
+    dt {
+      a, button {
+          cursor: pointer;
+        display: block;
+        width: 100%;
+        border: none;
+        color: $white;
+        background: transparent;
+        font-weight: $font-weight-medium;
+        font-family: "HCo Gotham SSm";
+        font-size: 18px;
+        line-height: 1.21;
+        padding: 40px 0;
+        padding-right: 40px;
+        text-align: left;
+          position: relative;
+          i.fa.fa-chevron-down {
+            position: absolute;
+            top: 38px;
+            right: 0;
+            transition: transform .25s;
+          }
+
+          h2 {
+              margin: 0;
+              font-size: inherit;
+            }
+      }
+
+      a.active, button.active {
+        i.fa.fa-chevron-down {
+          transform: rotate(179.99deg);
+        }
+      }
+    }
+    dt, dd {
+      border-top: 1px solid $gray_line;
+      &:first-of-type {
+        border-top: none;
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    dd.wysiwyg {
+      border-top: 0;
+      padding: 0;
+      opacity: 0;
+      transition: opacity .3s;
+      position: relative;
+    //   top: -20px;
+      &:last-of-type {
+        position: relative;
+        padding-bottom: 40px;
+        top: -1px;
+      }
+    }
+    dd.wysiwyg.active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 968px) {
+  .page-template-page-faq {
+    .accordion {
+      margin: 28px auto 200px;
+      dt {
+        a, button {
+          font-size: 24px;
+          line-height: 1.21;
+          padding: 68px 0 73px;
+          padding-right: 75px;
+            i.fa.fa-chevron-down {
+              top: 71px;
+              &:before {
+                font-size: 26px;
+              }
+            }
+        }
+      }
+
+      dd.wysiwyg {
+        padding: 0;
+        // top: -40px;
+      }
+    }
+
+    .news-detail {
+      padding: 0 80px 85px;
+    }
+    .page-contents {
+      padding-bottom: 118px;
+    }
+  }
+}

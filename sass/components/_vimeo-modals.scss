@@ -1,0 +1,101 @@
+.vimeo-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: -1;
+    background-color: $blackish;
+    display: flex;
+
+
+    .vimeo-close {
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        height: 0;
+        width: 28px;
+        cursor: pointer;
+        transition: opacity .25s ease .25s, height 0s ease .5s;
+        background-color: rgba(0,0,0, 0.6);
+        padding: 10px;
+
+        .line {
+
+            overflow: hidden;
+            position: absolute;
+            top: 20px;
+            right: -50%;
+            left: -50%;
+            height: 0;
+            width: 0;
+            margin: auto;
+            border-radius: 3px;
+            background-color: $white;
+            transform: rotate(0);
+            transition: transform .25s, height 0s ease 5s, width .25s ease .25s;
+        }
+
+        .line:first-child {
+            transform: rotate(0);
+        }
+    }
+
+ #vimeo-player {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+  .vimeo-modal-content {
+      width: 100%;
+      display: flex;
+  }
+
+  .vimeo-video-player {
+      width: 100%;
+      display: flex;
+  }
+
+  
+}
+
+.vimeo-modal.active {
+    z-index: 9999;
+    visibility: visible;
+
+    .vimeo-close {
+        opacity: .9999;
+        height: 42px;
+        transition: opacity .25s;
+
+        .line {
+            height: 5px;
+            width: 35px;
+            transform: rotate(45deg);
+            transition: transform .25s ease .25s, width .25s, background-color .25s;
+        }
+
+        .line:first-child {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .vimeo-close:hover .line {
+        background-color: $primary_color;
+    }
+}
+
+@media (min-width: 1280px) {
+    .modal {
+        // .modal-content {
+        //     left: 50%;
+        //     width: 1280px;
+        //     margin-left: -640px;
+        // }
+    }
+}

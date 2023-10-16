@@ -1,0 +1,13 @@
+
+.text-closing { text-align: center; padding: 80px 0; 
+	.inner { max-width: 844px; margin: 0 auto;
+		p, h2 { font-weight: $font-weight-medium !important; line-height: 1.33; color: $white; font-size: 18px; }
+		.btn-w-border { margin-top: 38px; }
+	}	
+}
+
+@media (min-width: $break968) {
+	.text-closing { padding: 181px 0 191px;
+		.inner p, .inner h2 { font-size: 36px; }
+	}
+}

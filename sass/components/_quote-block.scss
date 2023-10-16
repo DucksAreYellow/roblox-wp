@@ -1,0 +1,77 @@
+.quote-block {
+    position: relative;
+
+    .image-wrap {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-wrap {
+        position: absolute;
+        top: 23%;
+        left: 7%;
+        width: 86%;
+        max-width: 550px;
+
+        blockquote {
+            margin-bottom: 14px;
+
+            span {
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+                display: inline;
+                color: $primary_color;
+                line-height: 1.33;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+                display: inline;
+                color: $white;
+                line-height: 1.33;
+            }
+        }
+
+        cite {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            color: $gray_light;
+        }
+    }
+}
+
+@media (min-width: $break968) {
+    .quote-block {
+        .text-wrap {
+
+            text-shadow:    0px 0px 200px rgba(0,0,0,0.5),
+                            0px 0px 100px rgba(0,0,0,0.5),
+                            0px 0px 80px rgba(0,0,0,0.5),
+                            0px 0px 60px rgba(0,0,0,0.6),
+                            0px 0px 40px rgba(0,0,0,0.5),
+                            0px 0px 20px rgba(0,0,0,0.5),
+                            0px 0px 10px rgba(0,0,0,0.5);
+
+            blockquote {
+                margin-bottom: 24px;
+
+                span {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 36px;
+                }
+            }
+
+            cite {
+                font-size: 16px;
+            }
+        }
+    }
+}

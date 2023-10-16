@@ -1,0 +1,216 @@
+html[lang="zh-hans"] {
+	body { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+
+	h3 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	p { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+	p strong,
+	p b { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	span.light { font-family: 'SourceHanLightSC'; font-weight: normal; }
+
+	#header nav a { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+
+	#header .language-switcher .wpml-ls ul li a span { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+
+	footer {
+		small { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+		.f-center a { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	}
+
+	.btn-toggle,
+	.btn-sml { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	ul.heading li { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	ul.listings h4 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	ul.listings p { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+	.link-holder a { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.contact-faq h4 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	.control li span, a { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.expanding-block ul ul li { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+
+	.featured-block {
+		li {
+			h2,
+			.faux-btn span { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+		}
+	}
+
+	fieldset { 
+		input,
+		select,
+		.chosen-container .chosen-single,
+		.chosen-container .chosen-results li { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	}
+
+	.hero-block .centered-copy {
+		a,
+		h1 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+		.searchform input { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	}
+
+	.inquiry.sales p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+
+	.news-list {
+		.info {
+			h2, h4, .tag {
+				font-family: 'SourceHanHeavySC'; font-weight: normal;
+			}
+		}
+		.blurb h2 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+		a.mobile-post .info p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+		.navigation { 
+			a, .current { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		}
+	}
+
+	.newsletter {
+		.form-holder input[type="email"],
+		p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	}
+
+	.numbers-grid {
+		h2,
+		h4 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+		p { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+	}
+
+	.press-grid li p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.sg-survey { font-family: 'SourceHanNormalSC'; font-weight: normal;
+		strong,
+		label strong,
+		.sg-question-title strong,
+		.sg-button-bar input,
+		.sg-page-title { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+		.sg-question-description,
+		.sg-list label { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+
+		.sg-wrapper, .sg-question-title, .sg-question-title label,
+		.sg-question-title, .sg-question-title label,
+		.sg-input-text, .sg-input-menu, .sg-input-essay, .sg-question input[type="text"], .sg-question input[type="number"], .sg-question input[type="password"], .sg-question textarea { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	}
+
+	#at-expanded-menu-host #at-expanded-menu-title,
+	#at-expanded-menu-host .at-branding-logo,
+	#at-expanded-menu-host .at-copy-link-result-message span,
+	#at-expanded-menu-host .at-copy-link-share-page-url,
+	#at-expanded-menu-host .at-expanded-menu,
+	#at-expanded-menu-host .at-expanded-menu-button-label,
+	#at-expanded-menu-host .at-expanded-menu-email-disclaimer,
+	#at-expanded-menu-host .at-expanded-menu-load-btn,
+	#at-expanded-menu-host .at-expanded-menu-page-title,
+	#at-expanded-menu-host .at-expanded-menu-page-url,
+	#at-expanded-menu-host .at-expanded-menu-privacy-link,
+	#at-expanded-menu-host .at-expanded-menu-search-label-content,
+	#at-expanded-menu-host .at-expanded-menu-top-services-header { font-family: 'SourceHanNormalSC'; font-weight: normal !important; }
+
+	#at-expanded-menu-host .at-expanded-menu-title,  
+	#at-expanded-menu-host .at-expanded-menu-page-title { font-family: 'SourceHanHeavySC'; font-weight: normal !important; }
+
+	.tour {
+		.message .text-link { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		fieldset {
+			input,
+			select,
+			.chosen-container .chosen-choices { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		}
+
+		label { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		label span { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+	}
+
+	.submit-holder .submit-toggle { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.video-block {
+		.inner h1 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	}
+	.video-block.alt {
+		.inner h3 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	}
+
+	.worldwide { 
+		ul {
+			h4 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			div {
+				.number { font-family: 'SourceHanMediumSC'; font-weight: normal; }
+			}
+		}
+		.disclaimer { font-family: 'SourceHanMediumSC'; font-weight: normal; }
+	}
+
+	.wysiwyg { 
+		h1, h2, h3, h4, h5, h6 { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		b, strong { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	}
+
+	.wysiwyg-alt {
+		h1, h2, h3, h4, h5, h6 { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		h4, h5 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+		b, strong { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	}
+
+	.internship .copy a { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	.career-feature .copy a { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	.resume a { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+
+	.page-template-page-contact {
+		.support-block {
+			.support-content.wysiwyg h4 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			.contact-form {
+				.form-holder {
+					.chosen-container .chosen-choices { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+					.chosen-container .chosen-results li { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+				}
+				label { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+				.submit-holder {
+					input[type="submit"] { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+				}
+			}
+		}
+	}
+
+	.tour-completed .sg-instructions { font-family: 'SourceHanNormalSC'; font-weight: normal; }
+	.location .address .name { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.education-contact-text p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+	.featured-education-programs-closing p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.page-template-page-faq .accordion dt a { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+
+	.news-detail {
+		.detail-heading { 
+			h1 { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			.info p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			.tag { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+		}
+
+		.recommendations {
+			.tag { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			li p { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+
+			> div:nth-child(3) {
+				a div div:last-child { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+			}
+		}
+	}
+
+	.page-template-page-people {
+		.team-grid { 
+			.briefing {
+				h2,
+				p { font-family: 'SourceHanHeavySC'; font-weight: normal; }
+			}
+		}
+	}
+
+	.page-template-page-technology {
+		.copy-header { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+		.webgl-header-container { font-family: 'SourceHanBoldSC'; font-weight: normal; }
+	}
+}

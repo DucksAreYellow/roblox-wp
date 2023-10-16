@@ -1,0 +1,21 @@
+/* --- access-block --- */
+.access-block { padding: 90px 0 94px; text-align: center;
+	.copy { display: inline-block; max-width: 660px; margin-bottom: 56px; padding: 0 25px; }
+	h3, h2 { letter-spacing: 0; }
+	ul {
+		li, a { display: inline-block; }
+		li { margin: 0 14px 52px; }
+		li:last-child { margin-bottom: 0; }
+		img { height: 50px; }
+	}
+}
+
+.touch .access-block ul a { cursor: default; pointer-events: none; }
+
+@media (min-width: $break768) {
+	.access-block { padding: 202px 0 154px; 
+		.copy { margin-bottom: 84px; }
+		ul li { margin: 0 25px 52px; }
+		ul li:last-child { margin: 0 25px 52px; }
+	}
+}

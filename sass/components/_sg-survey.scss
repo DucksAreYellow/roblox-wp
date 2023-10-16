@@ -1,0 +1,88 @@
+.sg-survey { text-align: center; max-width: 980px; margin: 0 auto; font-weight: $font-weight-book !important;
+	strong,
+	label strong,
+	.sg-question-title strong { font-weight: $font-weight-bold; }
+	select { transition: border-color .25s;  }
+	select:focus { outline: none; border-color: $red; }
+
+	.sg-list label { font-weight: $font-weight-book; }
+
+	.sg-body { background: none; padding-bottom: 0 !important; }
+	.sg-wrapper { background-color: transparent; }
+	.sg-header { display: none; }
+	.sg-survey-form { width: 100%; }
+	.sg-question { margin: 0 auto; padding: 28px 20px 12px; text-align: center; border-bottom: 2px solid $white; background-color: transparent; 
+		transition: background-color .25s; 
+	}
+
+
+	fieldset.sg-question { position: relative; padding-top: 40px; 
+		legend { position: relative; top: 40px; left: 0; display: block; 
+			strong { margin-top: 20px; }
+		}
+	}
+
+	.sg-content { padding: 1.5em 0 0; }
+	.sg-page-title { text-align: center; font-weight: $font-weight-bold !important; margin-top: 36px; margin-bottom: 0; font-size: 18px !important; color: $red; }
+	.sg-question:hover { background-color: $white; }
+
+	.sg-question:last-child, .sg-type-instruction { border-bottom: none; 
+		a { color: #00a1ff; }
+	}
+	.sg-type-instruction { line-height: 1.7; }
+	.sg-type-instruction:hover { background-color: transparent; }
+
+	.sg-question-number { display: none; }
+	.sg-type-checkbox ul.sg-list-horizontal li, 
+	.sg-type-radio ul.sg-list-horizontal li { float: none !important; display: inline-block !important; }
+	.sg-wrapper, .sg-question-title, .sg-question-title label { font-weight: $font-weight-bold; }
+	.sg-question-title, .sg-question-title label { font-size: 18px; font-weight: $font-weight-bold; line-height: 1; }
+
+
+	.sg-question-description { display: block; max-width: 520px; margin: 8px auto 0; font-size: 14px; font-weight: $font-weight-book; line-height: 2.5; padding: 0; } 
+
+	.sg-type-checkbox ul.sg-list li { padding: .1em .2em; }
+
+	.sg-progress-bar { display: none; }
+
+	.sg-instructions { font-size: 14px; 
+		p { line-height: 2.5; }
+		p a { color: $red; margin-top: 20px; display: block; }
+	}
+
+	.sg-type-checkbox ul.sg-labels-right label, .sg-type-radio ul.sg-labels-right label { font-size: 14px; }
+
+	.sg-input-text, .sg-input-menu, .sg-input-essay, .sg-question input[type="text"], .sg-question input[type="number"], .sg-question input[type="password"], .sg-question textarea { height: 43px; max-width: 424px; width: 100%; margin-top: 16px; font-size: 18px; font-weight: $font-weight-bold; text-align: center; border-radius: 4px; border: 1px solid #ededed; color: $red; background-color: transparent; background-image: none; }
+
+	.sg-question textarea { height: 120px; resize: none; }
+
+	.sg-footer { margin: 0 auto; padding: 0; }
+
+	.sg-button-bar { overflow: hidden; position: relative; display: flex; height: 43px; max-width: 675px; margin: 0 auto; border-radius: 3px; border: 1px solid #231f20; background-color: $white; box-sizing: border-box; 
+		input { overflow: hidden; position: relative; display: flex; height: 43px; line-height: 43px; width: 100%; padding: 0 80px 0 10px; font-size: 18px; font-weight: $font-weight-bold; letter-spacing: 0; text-align: left; color: $red; cursor: pointer; border-radius: 5px; border: none; background-color: $white; box-sizing: border-box; }
+	}
+
+	.sg-button-bar:after { content: ''; background-image: url('//corporate.roblox.com/wp-content/uploads/2017/03/right-arrow.png'); background-position: 0 0; display: block; position: absolute; width: 10px; height: 18px; background-size: 10px 18px; top: 11px; right: 15px; }
+
+	.sg-error-message a { color: $red; }
+	.sg-error-message.sg-error-display { outline: none; }
+
+	.sg-body.sg-int-virtual-page .sg-footer { padding: 0 20px !important; }
+
+	.sg-replace-icons .sg-type-checkbox ul.sg-labels-right input.sg-input-checkbox+label:before, .sg-replace-icons .sg-type-radio ul.sg-labels-right input.sg-input-radio+label:before { 
+		left: auto !important;
+		right: auto !important;
+		width: auto !important;
+		outline: 0 !important;
+		margin-left: -20px !important;
+	}
+}
+
+@media (min-width: 508px) {
+	.sg-survey {
+		.sg-button-bar { height: 73px; border-radius: 5px;
+			input {height: 73px; padding: 0 80px 0 30px; font-size: 24px; cursor: pointer; border-radius: 5px; }
+		}
+		.sg-button-bar:after { width: 15px; height: 23px; background-size: 15px 23px; top: 24px; bottom: 0; right: 20px; }
+	}	
+}

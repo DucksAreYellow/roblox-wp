@@ -1,0 +1,89 @@
+/* --- research - page --- */
+.research {
+  .accordion-cta {
+    display: inline-flex;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 85px;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: #009dff;
+    }
+
+    i {
+      margin: auto;
+      margin-right: 13.5px;
+      margin-left: 0;
+    }
+  }
+
+  .accordion-description,
+  .accordion-author {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1.16px;
+    color: #000;
+  }
+
+  .research-publications {
+    color: #000;
+    padding: 35px 20px 99px;
+    background: #fafafa;
+
+    .accordion {
+      button {
+        color: #000;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 35px;
+
+        @media (min-width: $break768) {
+          font-size: 24px;
+          line-height: 36px;
+        }
+
+        .fa.fa-link {
+          display: none;
+        }
+
+        &:hover .fa.fa-link {
+          display: inline-block;
+        }
+      }
+      .wysiwyg {
+        color: #000;
+
+        * {
+          color: #000;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    @media (min-width: $break968) {
+      padding: 90px 0 250px;
+    }
+
+    &__titles {
+      font-size: 38px;
+      line-height: 45.6px;
+      margin: 0 0 57px;
+      text-align: center;
+
+      @media (min-width: $break768) {
+        font-size: 55px;
+        line-height: 69.3px;
+        margin: 0 0 95px;
+      }
+    }
+  }
+}

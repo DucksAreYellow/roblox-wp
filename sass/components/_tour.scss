@@ -1,0 +1,100 @@
+/* --- tour --- */
+.tour { padding: 180px 20px; padding: 50px 25px;
+	iframe { height: 2400px; }
+	.intro-copy { padding: 0;
+		p { margin-bottom: 50px; font-size: 18px; line-height: 2; }
+		p a { color: #00a1ff; text-decoration: underline; }
+		.btn-toggle { max-width: 676px; margin: 0 auto;
+			i { transition: color .25s, transform 1000ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+		}
+	}
+	.message { max-width: 665px; margin: 62px auto 0; text-align: center;
+		p { margin-bottom: 36px; font-size: 12px; line-height: 2.5; }
+		.text-link { display: inline-block; height: auto; margin-bottom: 56px; font-size: 12px; font-weight: $font-weight-bold; color: $red; }
+		.error-message { color: $red; display: none;  }
+	}
+	fieldset { max-width: 980px; margin: 0 auto; padding: 28px 20px 32px; text-align: center; border-bottom: 2px solid $white; background-color: transparent;
+		transition: background-color .25s;
+		.chosen-container { max-width: 424px; }
+		input,
+		select,
+		.chosen-container .chosen-choices { height: 43px; max-width: 424px; width: 100%; font-size: 20px; font-weight: $font-weight-bold; text-align: center; border-radius: 4px; border: 1px solid #ededed; color: $red; background-color: transparent; background-image: none; }
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		.active-result { font-size: 20px; }
+
+		.chosen-container a,
+		.chosen-container-active.chosen-with-drop .chosen-single,
+		.chosen-container-active .chosen-choices,
+		.chosen-results { background: none; box-shadow: none; }
+		.chosen-container-active.chosen-with-drop .chosen-single,
+		.chosen-container .chosen-drop { box-shadow: none; border: 1px solid #ededed; }
+
+		.chosen-container .chosen-choices { min-height: 47px; height: auto!important; padding: 5px 40px 5px 0; cursor: pointer; }
+		.chosen-container i { position: absolute; top: 0; right: 15px; bottom: 0; height: 19px; width: 18px; margin: auto; font-size: 20px; color: #d3d3d3;
+			transform: rotate(0);
+			transform-origin: center;
+			transition: transform .25s, color .25s;
+		}
+		.chosen-container:hover i { color: $red; }
+		.chosen-container-active i { transform: rotate(180deg); color: $red; }
+
+		.chosen-container-multi .chosen-choices li.search-choice { margin: 4px 0 4px 10px; }
+		.chosen-container-multi .chosen-choices li.search-field { float: none; padding: 5px 0;
+			input { width: 100%!important; }
+		}
+		.chosen-container-multi .chosen-results li:first-child { display: none; }
+		.chosen-single { padding-top: 8px;
+			box-sizing: border-box;
+			span { margin-right: 0; }
+		}
+		.chosen-container .chosen-drop { border-top: 0px; }
+		.chosen-container .chosen-results { margin: 0; padding: 0 0 10px;
+			li { padding: 10px;
+				transition: background-color .25s, color .25s;
+			}
+			li.highlighted { background-color: $red; background-image: none; }
+		}
+		input[type=number] {
+			-moz-appearance:textfield;
+		}
+	}
+	fieldset:first-child { border-top: 2px solid $white; }
+	fieldset:hover, fieldset.active { background-color: $white;
+		input, select { border-color: #f4f4f4; }
+	}
+	label { display: inline-block; margin-bottom: 27px; font-size: 18px; font-weight: $font-weight-bold; }
+	label span { display: inline-block; max-width: 520px; margin-top: 18px; font-weight: $font-weight-book; line-height: 2.5; }
+	//.btn-toggle { margin: auto; height: 76px; max-width: 676px; font-size: 24px; text-align: left; }
+	
+	.submission { overflow: hidden; position: relative; height: 43px;
+		.submit-holder, .success, .retry { position: absolute; top: 0; right: 0; left: 0; height: 43px; }
+	}
+	.success, .retry { display: none; }
+
+	.submit-holder { overflow: hidden; position: relative; display: flex; align-items: center; max-width: 675px; margin: 0 auto; border-radius: 5px; border: 1px solid #231f20; background-color: $white;
+		box-sizing: border-box;
+		.submit-toggle { overflow: hidden; position: relative; display: flex; align-items: center; max-width: 424px; width: 100%; padding: 0 0 0 20px; font-size: 18px; font-weight: $font-weight-bold; letter-spacing: 0em; color: $red; cursor: pointer; border-radius: 5px; border: 1px solid #231f20; background-color: $white;
+			box-sizing: border-box;
+
+			i { position: absolute; top: 0; right: 20px; bottom: 0; height: 20px; width: 20px; margin: auto; color: $black;
+				transition: color .25s;
+			}
+		}
+		.submit-toggle:hover i { color: #e22319; }
+		.submit-toggle { height: 37px; max-width: none; text-align: left; border: none; }
+		i { position: absolute; top: 13px; right: 20px; pointer-events: none;
+			transition: color .25s; 
+		}
+	}
+	.submit-holder:hover i { color: $red; }
+}
+.tour.open .intro-copy a { overflow: hidden; height: 0px; border: none; }
+
+.tour.Disabled {
+
+}

@@ -1,0 +1,41 @@
+.inc {
+	align-items: flex-start;
+	background-color: $blackish;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	padding: 50px 25px;
+	margin: 0 auto;
+	width: 100%;
+
+	.img-holder { vertical-align: top; margin: 0 auto 30px; text-align: center;
+		img { max-width: 240px; }
+	}
+
+	.copy { vertical-align: top;
+		box-sizing: border-box;
+		h3 { margin: 0 0 19px; }
+		p { max-width: 650px; }
+		p em { font-size: 14; font-style: italic; font-family: 'HCo Gotham SSm' !important; font-size: 12px !important; }
+	}
+}
+
+@media (min-width: $break768) {
+	.inc { justify-content: center; padding: 82px 30px; margin: 0 auto;
+		.img-holder { margin: 22px 0 30px 60px;
+			img { max-width: 222px; }
+		}
+		.copy { padding: 0 0 0 57px; 
+			h3 { margin-top: 0; }
+		}
+	}
+}
+
+
+@media (min-width: $break968) {
+	.inc {
+		padding-top: 82px;
+		padding-bottom: 166px;
+	}
+}

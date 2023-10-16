@@ -1,0 +1,16 @@
+.contact-faq {
+	ul { padding: 20px 20px; text-align: center; background-color: $white; }
+	li { position: relative; }
+	li a { display: inline-block; width: 100%; padding: 42px 20px; color: $black; background-color: transparent;
+		box-sizing: border-box;
+		transition: color .25s, background-color .25s;
+	}
+	li:after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; max-width: 986px; width: 100%; margin: auto; background-color: #f8f8f8;
+		transition: background-color .25s;
+	}
+	li:last-child:after { content: none; }
+	li a:hover { color: $white; background-color: $red; }
+	li:hover:after { background-color: transparent; }
+	h4 { margin-bottom: 10px; font-size: 24px; font-weight: $font-weight-bold; }
+	p { display: inline-block; max-width: 525px; line-height: 1.9; }
+}

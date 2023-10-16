@@ -1,0 +1,83 @@
+/*
+ * APM Page Template
+ */
+
+html > body.page-template-page-apm {
+  .intro-copy {
+    &__cta {
+      margin-top: 30px;
+    }
+  }
+
+  .apm-features-section {
+    padding-bottom: 194px;
+
+    .intro-copy {
+      padding-bottom: 100px;
+      padding-top: 0;
+    }
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .apm-aditl-slider .section-title {
+    margin-bottom: 30px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .apm-aditl-slider {
+    padding-bottom: 194px;
+  }
+
+  @media (min-width: $break968) {
+    .hero-block .centered-copy h1 {
+      font-size: 52px;
+    }
+
+    /*  h3.intro-copy__title {
+      font-size: 52px;
+    } */
+
+    .admin-bar .hero-block {
+      min-height: none !important;
+      max-height: none !important;
+      height: 483px !important;
+    }
+
+    .accordion dt a {
+      font-size: 25px !important;
+    }
+  }
+
+  .apm-feature .copy,
+  .apm-feature .image-wrap {
+
+    height: 380px !important;
+    @media (min-width: $break968) and (max-width: $break1280) {
+      height: auto !important;
+    }
+
+    min-height: 0 !important;
+  }
+
+  /* Fix issues with people team accordion component in APM page */
+  /* .team-grid li.expanding-block .people-image.hidden {
+    display: initial !important;
+  }
+  .team-grid li.expanding-block .people-image-bw {
+    display: none !important;
+  }
+  */
+  .team-grid .sub {
+    margin: 0 !important;
+  }
+  .team-grid .briefing {
+      height: auto !important;
+  } 
+}

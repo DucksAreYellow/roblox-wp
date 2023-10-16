@@ -1,0 +1,497 @@
+/* --- hero-block --- */
+.admin-bar .hero-block {
+    max-height: calc(100vh - 128px);
+}
+
+/* --- hero-block --- */
+.hero-block {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 26vw;
+    max-height: calc(100vh - 96px);
+    min-height: 432px;
+
+    &.hero-block--half {
+        @media (min-width: $break768) {
+            max-height: 50vh;
+            min-height: 50vh;
+        }
+    }
+
+    img {
+        visibility: hidden;
+        position: relative;
+    }
+
+    video,
+    iframe {
+        position: relative;
+    }
+
+    .centered-copy {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        text-shadow:    0px 0px 200px rgba(0,0,0,0.5),
+                        0px 0px 100px rgba(0,0,0,0.5),
+                        0px 0px 80px rgba(0,0,0,0.5),
+                        0px 0px 60px rgba(0,0,0,0.6),
+                        0px 0px 40px rgba(0,0,0,0.5),
+                        0px 0px 20px rgba(0,0,0,0.5),
+                        0px 0px 10px rgba(0,0,0,0.5);
+
+        a,
+        button {
+            cursor: pointer;
+            color: $white;
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            letter-spacing: .01em;
+            text-align: center;
+            line-height: 40px;
+
+            padding: 0;
+
+            margin-top: 22px !important;
+            text-indent: -9999em;
+
+            width: auto;
+            height: 40px;
+            background: transparent url('img/play-btn-video.png') no-repeat center center;
+            background-size: 33px 33px;
+            border: none;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        h1 {
+            position: relative;
+            top: -3%;
+            font-size: 30px;
+            font-weight: $font-weight-bold;
+            letter-spacing: -.02em;
+            text-align: center;
+            color: $white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .sentence h1,
+        .sentence .hero-block__title {
+            font-size: 24px;
+            font-weight: $font-weight-bold;
+            top: -4%;
+            margin-bottom: 10px;
+            line-height: 1.0;
+        }
+
+        h1 u {
+            margin-left: -2px;
+            text-decoration: none;
+            border-bottom: 2px solid $white;
+            padding-bottom: .05em;
+        }
+
+        &:after {
+            background-color: rgba(0, 0, 0, .3);
+            content: "";
+            height: 100%;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+        }
+    }
+}
+
+.single.roblox-blog {
+    .hero-block {
+        height: 56.25vw;
+        min-height: auto;
+        background-position: center;
+
+        &.hero-block--half {
+            @media (min-width: $break768) {
+                height: 50vh;
+                max-height: 50vh;
+            }
+        }
+    }
+}
+
+.single .hero-block,
+.single.roblox-blog .hero-block {
+    @media (max-width: $break768 - 1) {
+        padding-top: 56.25%;
+        min-height: 0;
+        height: auto;
+    }
+}
+
+.page-template-page-home .hero-block .centered-copy:after {
+    content: none;
+}
+
+.hero-block.about-film {
+    cursor: pointer;
+
+    img {
+        visibility: visible;
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .hero-block {
+        background-position: center 90%;
+    }
+}
+
+.hero-block.alt-color {
+    .centered-copy {
+        h1 {
+            color: $black;
+        }
+    }
+}
+
+.hero-block.home {
+    height: 56.25vw;
+
+    .centered-copy .inner h1 u {
+        border-bottom: none;
+    }
+
+    .centered-copy:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
+        opacity: 0;
+        transition: opacity .25s;
+    }
+
+    video {
+        vertical-align: top;
+        object-fit: cover;
+    }
+}
+
+.hero-block.home.careers {
+    cursor: default;
+
+    .centered-copy:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(1, 145, 245, 0.75);
+        opacity: 1;
+    }
+}
+
+//.no-touch .hero-block.home:hover .centered-copy:before { opacity: 1; }
+
+.hero-block .searchform {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    >div {
+        position: relative;
+        display: inline-block;
+        padding-left: 60px;
+    }
+
+    label,
+    input[type="submit"] {
+        display: none;
+    }
+
+    .m-glass {
+        visibility: visible;
+        position: absolute;
+        top: 8px;
+        left: 24px;
+        height: auto;
+        width: 25px;
+    }
+
+    .input-holder {
+        position: relative;
+    }
+
+    .input-holder:before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        height: 20px;
+        width: 2px;
+        background-color: $white;
+    }
+
+    input {
+        height: 28px;
+        max-width: 110px;
+        width: 100%;
+        margin-top: 5px;
+        padding: 0 0 0 10px;
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        border: none;
+        border-radius: 0px;
+        color: $white;
+        background-color: transparent;
+        box-sizing: border-box;
+        letter-spacing: 0;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-text-size-adjust: none;
+        -webkit-overflow-scrolling: touch;
+        text-rendering: optimizelegibility;
+    }
+
+    ::-webkit-input-placeholder {
+        opacity: .9999;
+        color: $white;
+        transition: opacity .25s;
+    }
+
+    ::-moz-placeholder {
+        opacity: .9999;
+        color: $white;
+        transition: opacity .25s;
+    }
+
+    :-ms-input-placeholder {
+        opacity: .9999;
+        color: $white;
+        transition: opacity .25s;
+    }
+
+    ::-ms-input-placeholder {
+        opacity: .9999;
+        color: $white;
+        transition: opacity .25s;
+    }
+
+    :-moz-placeholder {
+        opacity: .9999;
+        color: $white;
+        transition: opacity .25s;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        opacity: .5;
+        transition: opacity .25s;
+    }
+
+    input:focus::-moz-placeholder {
+        opacity: .5;
+        transition: opacity .25s;
+    }
+
+    input:focus:-ms-input-placeholder {
+        opacity: .5;
+        transition: opacity .25s;
+    }
+
+    input:focus::-ms-input-placeholder {
+        opacity: .5;
+        transition: opacity .25s;
+    }
+
+    input:focus:-moz-placeholder {
+        opacity: .5;
+        transition: opacity .25s;
+    }
+}
+
+.touch {
+    .hero-block .searchform input {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: $break375) {
+
+    .hero-block .centered-copy .sentence h1,
+    .hero-block .centered-copy .sentence .hero-block__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 508px) {
+
+    /* --- home hero --- */
+    .hero-block .centered-copy a,
+    .hero-block .centered-copy button {
+        text-indent: unset;
+
+        margin-top: 33px !important;
+        padding: 40px 0 0 0;
+        background-position: center top;
+        background-size: 40px 40px;
+    }
+}
+
+@media (min-width: $break768) {
+
+    .hero-block {
+        min-height: 332px;
+        background-position: center;
+    }
+
+    .hero-block .centered-copy .sentence {
+
+        h1,
+        .hero-block__title {
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+
+        h1 u {
+            border-bottom: 3px solid $white;
+        }
+    }
+
+    /* --- home hero --- */
+    .hero-block.home {
+        .centered-copy .inner h1 u {
+            border-bottom: 2px solid $white;
+        }
+    }
+
+
+    .hero-block .centered-copy h1 {
+        top: -1%;
+    }
+
+    .hero-block.about-film .centered-copy a,
+    .hero-block.about-film .centered-copy button {
+        font-size: 16px;
+    }
+
+    .hero-block .searchform {
+        >div {
+            padding-left: 90px;
+        }
+
+        .input-holder:before {
+            top: 11px;
+            height: 46px;
+            width: 3px;
+        }
+
+        .m-glass {
+            top: 10px;
+            left: 20px;
+            width: 50px;
+        }
+
+        input {
+            height: 54px;
+            max-width: 200px;
+            margin-top: 8px;
+            padding-left: 22px;
+            font-size: 48px;
+        }
+    }
+
+    .touch {
+        .hero-block .searchform input {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+@media (min-width: $break968) {
+    .hero-block .centered-copy h1 {
+        font-size: 60px;
+    }
+
+    .hero-block .centered-copy .sentence h1,
+    .hero-block .centered-copy .sentence .hero-block__title {
+        font-size: 72px;
+    }
+
+    .hero-block .centered-copy a,
+    .hero-block .centered-copy button {
+        padding: 96px 0 0 0;
+        margin-top: 90px !important;
+        background-position: center top;
+        background-size: 95px 95px;
+    }
+}
+
+@media (min-width: $break1024) {
+    .hero-block .centered-copy h1 {
+        font-size: 60px;
+    }
+
+    //.hero-block .centered-copy .sentence h1 { font-size: 72px; }
+    .hero-block.home {
+        .centered-copy .inner h1 u {
+            border-bottom: 3px solid $white;
+        }
+    }
+}
+
+@media (min-width: $break1208) {
+
+    //.hero-block .centered-copy .sentence h1 { font-size: 72px; }
+    .hero-block.about-film .centered-copy .sentence h1,
+    .hero-block .centered-copy .sentence .hero-block__title {
+        position: relative;
+        top: 0;
+    }
+
+    .hero-block.about-film .centered-copy a,
+    .hero-block.about-film .centered-copy a {
+        bottom: 4.5%;
+    }
+
+    .hero-block .centered-copy button {
+        margin-top: 124px !important;
+    }
+}
+
+@media (min-width: $break1400) {
+    //.hero-block .centered-copy .sentence h1 { font-size: 72px; }
+}

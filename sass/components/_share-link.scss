@@ -1,0 +1,30 @@
+/* === Share link iframe stuff === */
+#at-expanded-menu-host #at-expanded-menu-title,
+#at-expanded-menu-host .at-branding-logo,
+#at-expanded-menu-host .at-copy-link-result-message span,
+#at-expanded-menu-host .at-copy-link-share-page-url,
+#at-expanded-menu-host .at-expanded-menu,
+#at-expanded-menu-host .at-expanded-menu-button-label,
+#at-expanded-menu-host .at-expanded-menu-email-disclaimer,
+#at-expanded-menu-host .at-expanded-menu-load-btn,
+#at-expanded-menu-host .at-expanded-menu-page-title,
+#at-expanded-menu-host .at-expanded-menu-page-url,
+#at-expanded-menu-host .at-expanded-menu-privacy-link,
+#at-expanded-menu-host .at-expanded-menu-search-label-content,
+#at-expanded-menu-host .at-expanded-menu-top-services-header { font-weight: $font-weight-book !important; letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	-webkit-overflow-scrolling: touch;
+	text-rendering: optimizelegibility;
+}
+#at-expanded-menu-host .at-expanded-menu-title  { font-size: 48px!important; font-weight: $font-weight-bold !important; }
+#at-expanded-menu-host .at-expanded-menu-page-title { font-size: 16px!important; font-weight: $font-weight-bold !important; }
+#at-expanded-menu-host .at-copy-link-share-icon .at-icon-wrapper { border-radius: 0 0 4px 4px!important;
+	transform: rotate(90deg);
+}
+#at-expanded-menu-host .at-copy-link-share-page-url { border-color: transparent!important; }
+#at-expanded-menu-host .at-expanded-menu-primary-action-btn { height: 50px!important; width: 125px!important; margin-top: 40px!important; border-radius: 5px!important; font-size: 18px!important; font-family: 'Circular-Black' !important; letter-spacing: .02em!important; background-color: $black!important;
+	transition: background-color .25s!important;
+}
+#at-expanded-menu-host .at-expanded-menu-primary-action-btn:hover { background-color: $red!important; }

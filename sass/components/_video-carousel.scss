@@ -1,0 +1,90 @@
+.swiper.video-carousel {
+  .swiper-slide {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    button {
+      // background: transparent url(img/play-btn-video.png) no-repeat center 0px;
+      // -webkit-filter: drop-shadow(2px 2px 4px #191A1B);
+      // filter: drop-shadow(2px 2px 4px #191A1B);
+      // background-size: contain;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 60px;
+      width: 60px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background-color:rgba(0, 0, 0, 0.27);
+      cursor: pointer;
+      transition: background-color 250ms ease-in-out;
+
+      &:hover {
+        background-color:rgba(0, 0, 0, 0.50);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        height: 24px;
+        width: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(calc(-50% + 2px), -50%);
+        // background-color: $white;
+        border-style: solid;
+        border-width: 12px 0px 12px 16px;
+        border-color: transparent transparent transparent $white;
+      }
+
+      @media (min-width: $break768) {
+        height: 120px;
+        width: 120px;
+
+        &::after {
+          height: 48px;
+          width: 32px;
+          border-width: 24px 0px 24px 32px;
+          transform: translate(calc(-50% + 4px), -50%);
+        }
+      }
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: $white;
+    // text-shadow: 2px 2px 4px #191A1B;
+  }
+}
+
+.swiper.thumbnail-pagination {
+  padding: 32px 0 48px;
+
+  .swiper-slide {
+    width: 120px;
+    height: 67.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+    transition: opacity 300ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: $break768) {
+      width: 160px;
+      height: 90px;
+    }
+
+    &-active {
+      opacity: 1;
+    }
+  }
+}

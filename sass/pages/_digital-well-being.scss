@@ -1,0 +1,397 @@
+.page-template-page-digital-well-being{
+
+    #container {
+        background-color: $black-background;
+    }
+    .hero {
+        background-color: $black;
+    }
+    .bg-grey{
+        background-color: #18191b;
+    }
+    .bg-grey-2 {
+        background-color: $black;
+    }
+
+    .hero-block{
+        background-position: center top;
+    }
+
+    .btn-w-border {
+        margin-top: 30px;
+    }
+
+    .featured-block {
+        margin-top: 0px;
+    }
+
+    .featured-block li .img-holder {
+        overflow: hidden;
+    }
+
+    @media(min-width:600px){
+        .scrolltoggle{
+            margin-top:-100vh !important;
+            margin-bottom: -20vh !important;
+        }
+    }
+
+    .tech-videos {
+      text-align: center;
+      padding: 0 0 65px;
+      background-color: #000;
+
+      .intro {
+          padding: 10px 25px 90px;
+          max-width: 994px;
+          margin: 0 auto;
+
+          h3 {
+              max-width: 600px;
+              margin: 0 auto 22px;
+          }
+
+          p {
+              margin: 0 auto;
+              max-width: 720px;
+          }
+      }
+
+        .tech-vid {
+            margin-bottom: 50px;
+
+            .poster {
+                margin-bottom: 48px;
+                display: block;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+
+                .curtain {
+                    opacity: 1.0;
+                    transition: opacity .5s;
+                }
+
+                img {
+                    transform: scale(1.0);
+                    transition: transform .5s;
+                }
+            }
+
+            .poster:hover {
+                img {
+                    transform: scale(1.05);
+                }
+
+                .curtain {
+                    opacity: 0.0;
+                }
+            }
+
+            .poster .poster__watch {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translateY(50%) translateX(-50%);
+                width: 66px;
+                height: 66px;
+                background: transparent url('img/play-btn-video.png') no-repeat center left;
+                background-size: 66px 66px;
+            }
+
+            .inner {
+                padding: 0 20px;
+                margin: 0 auto;
+                max-width: 430px;
+            }
+
+            h3 {
+                color: $primary_color;
+                font-size: 16px;
+                margin-bottom: 15px;
+                $font-weight: medium;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 2;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .safety-advice__list {
+        position: relative;
+    }
+    
+    .safety-advice__line {
+        position: absolute;
+        z-index: 0;
+        top: 5px;
+        left: 8px;
+        width: 1px;
+        background-color: #CBCDD3;
+
+        @media(min-width:600px){
+            left: 12px;
+        }
+    }
+
+    .for-parents{
+
+        &__wrapper {
+            max-width: 333px;
+            margin: 0 auto;
+        }
+
+        .section-intro {
+            margin: 22px auto;
+        }
+
+        &__icon {
+            display:block;
+            width:100%;
+
+            img {
+                width:100%;
+                max-width:50px;
+                height:auto !important;
+                display:block;
+                margin:auto;
+            } 
+        }
+
+        &__link {
+            text-align: center;
+
+            a.btn-w-border {
+                display:inline-block;
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+    .section-intro {
+        max-width: 640px;
+        margin: 0 auto 30px;
+
+
+        &__title {
+            text-align: center;
+            /* font-size: 36px; */
+        }
+
+        &__caption{
+            text-align: center;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+    }
+
+    .section-vertical-space {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .bullet-list {
+        max-width: 810px;
+        margin: 90px auto 0 auto;
+
+        &__item {
+            font-weight: 300;
+            padding-bottom: 50px;
+            position: relative;
+            &:last-child {
+                padding-bottom: 0;
+            }
+            &.active {
+                .bullet-list__copy {
+                    opacity: 1 !important;
+                }
+
+                .bullet-list__bullet {
+                    background-color: $blue;
+                }
+            }
+
+        }
+
+        &__wrapper {
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+
+        // First bullet always visible.
+        .item-1 {
+            .bullet-list__copy {
+                opacity: 1 !important;
+            }
+            
+            .bullet-list__bullet {
+                background-color: $blue !important;
+            }
+        }
+
+        &:not([without-effect]) .bullet-list__copy {
+            opacity: 0.5;
+        }
+
+        &__bullet {
+            $bullet-size-mobile: 17px;
+            $bullet-size: 25px;
+            flex: 0 0 $bullet-size-mobile;
+            background-color: $black-background;
+            border: 2px solid $blue;
+            width: $bullet-size-mobile;
+            height: $bullet-size-mobile;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-top: 4px;
+            transition: .2s ease-out;
+
+            /* z-index: 5; */
+            @media(min-width:600px){
+                flex: 0 0 $bullet-size;
+                width: $bullet-size;
+                height: $bullet-size;
+            }
+        }
+
+        &__copy {
+            margin-left: 5%;
+            transition: opacity .2s ease-out;
+
+            &, & p {
+                line-height: 1.4;
+                font-size: 17px;
+
+                @media(min-width:600px){
+                    font-size: 24px;
+                }
+            }
+            
+            p {
+                display: inline;
+            }
+
+            a {
+                color: #009dff;
+                border-bottom: 1px solid #009dff;
+                transition: all 0.2s ease-in;
+
+                &:hover {
+                    color: #cccdd3;
+                    border-color: #cccdd3;
+                }
+            }
+        }
+
+        &__title{
+            flex: 1;
+            color: #009dff;
+            font-weight: 600;
+            letter-spacing: .025em;
+        }
+
+    }
+
+    .logos {  
+        display: flex;
+        margin: 80px auto 0;
+        flex-wrap: wrap;
+        max-width: 810px;
+
+        @media(max-width:600px){ 
+            flex-direction: column;
+        }
+
+        &__tile {
+            flex: 1 0 29%;
+            text-align: center;
+            margin: 45px 2%;
+            background: $black-background;
+        }
+    }
+
+    .build-together { 
+
+        padding-bottom: 0px;
+
+        .section-intro {
+            margin-bottom: 100px;
+        }
+
+        .slide.youtube-vid.slick-slide.slick-current.slick-center {
+            background-color: #18191b;
+        }
+        button.slick-next.slick-arrow,
+        button.slick-prev.slick-arrow {
+            background-color: #000000;
+
+            &:hover {
+                background-color: #009dff;
+            }
+        }
+
+        .careers-slideshow {
+            margin-bottom: 0 !important;
+        }
+    }
+
+     @media (min-width: $break768) {
+        .section-vertical-space {
+            padding-top: 190px;
+            padding-bottom: 190px;
+        }
+
+        .bullet-list {
+            margin: 145px auto 0 auto;
+        }
+    }
+
+    @media (min-width: $break968) {
+      .tech-videos {
+        padding: 0 80px 115px;
+
+        .intro {
+            padding-top: 85px;
+            padding-bottom: 100px;
+            margin: 0 auto;
+
+            h3 {
+                margin: 0 auto 30px;
+            }
+
+            p {
+                margin: 0 auto;
+            }
+        }
+
+        .tech-vid {
+            float: left;
+            margin-top: 0;
+            margin-bottom: 70px;
+            width: calc(50% - 40px);
+
+            .inner {
+                padding: 0 20px;
+            }
+        }
+
+        .tech-vid:nth-child(odd) {
+          clear: left;
+        }
+
+        .tech-vid:nth-child(even) {
+            display: block;
+            float: right;
+            clear: right;
+        }
+      }
+    }
+}

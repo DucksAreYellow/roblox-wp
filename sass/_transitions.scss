@@ -1,0 +1,62 @@
+/* Transition Setup*/
+.no-touch .fader,
+.no-touch .fader-delay,
+.no-touch .fader-title,
+.no-touch .fader-text {
+    opacity: 0;
+    visibility: visible;
+}
+
+/* Main */
+.no-touch .faded {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+}
+
+.no-touch .faded-delay {
+    opacity: 1;
+    -webkit-transition: opacity .5s .5s linear;
+    -moz-transition: opacity .5s .5s linear;
+    transition: opacity .5s .5s linear;
+}
+
+.no-touch .fadeout {
+    opacity: 0;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+}
+
+/* Titles */
+.no-touch .fader-title {
+    transform: translate3d(0px, 25px, 0px);
+}
+
+.no-touch .faded-title {
+    margin-top: 0;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: opacity .5s .5s linear, transform .5s .5s ease-out;
+    -moz-transition: opacity .5s .5s linear, transform .5s .5s ease-out;
+    transition: opacity .5s .5s linear, transform .5s .5s ease-out;
+}
+
+/* Text */
+.no-touch .fader-text {
+    opacity: 0;
+    transform: translate3d(0px, 25px, 0px);
+    -webkit-transform: translate3d(0px, 25px, 0px);
+}
+
+.no-touch .faded-text {
+    margin-top: 0;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: opacity .5s 0s linear, -webkit-transform .5s 0s ease-out;
+    -moz-transition: opacity .5s 0s linear, transform .5s 0s ease-out;
+    transition: opacity .5s 0s linear, transform .5s 0s ease-out;
+}

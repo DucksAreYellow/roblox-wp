@@ -1,0 +1,390 @@
+.page-template-page-careers {
+
+    .intro-copy .btn-w-border {
+        margin-top: 30px;
+    }
+
+    .job-listings {
+        padding-bottom: 90px;
+    }
+
+    .build-your-career {
+        background-color: $black-background;
+    }
+
+
+    .resume,
+    .copy-block {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 90px 25px 96px;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 35px;
+            line-height: 1.33;
+        }
+
+        p {
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.65;
+            max-width: 700px;
+        }
+    }
+
+    .img-block {
+        padding: 0 !important;
+        margin: 0 !important;
+
+        img {
+            border: none;
+            visibility: hidden;
+        }
+    }
+
+    .hero-block {
+        margin: 0 !important;
+        max-height: none;
+    }
+
+    .numbers-grid {
+        background-color: $black;
+        padding: 90px 25px 60px;
+    }
+
+    .featured-block {
+        margin: 0;
+    }
+
+    .department {
+        margin-bottom: 60px;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.heading {
+        width: 260px;
+        max-width: 826px;
+        margin: 0 auto 77px;
+        position: relative;
+        z-index: 1;
+
+        li {
+            width: 100%;
+        }
+    }
+
+    .role-title {
+        max-width: 738px;
+        margin: 0 auto 30px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+
+    .no-results {
+        p {
+            text-align: center;
+            opacity: 0.85;
+            width: 90%;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        p:hover {
+            opacity: 1;
+        }
+    }
+
+    ul.listings {
+        margin-bottom: 25px;
+        max-width: 776px;
+        margin: 0 auto;
+
+        li {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 25px;
+
+            h4,
+            p {
+                flex-basis: 100%;
+                vertical-align: top;
+                text-align: left;
+            }
+
+            h4 {
+                font-size: 13px;
+                font-weight: $font-weight-bold;
+                line-height: 1.34;
+                display: block;
+                margin-bottom: 6px;
+                padding-right: 50px;
+            }
+
+            h4 a {
+                color: $primary_color;
+                font-weight: 300;
+                font-size: 13px;
+                text-decoration: underline;
+                transition: color .25s;
+            }
+
+            h4 a:hover {
+                color: $white;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: $font-weight-light;
+            }
+        }
+    }
+
+    .hero-block.about-film {
+        overflow: visible;
+    }
+
+    .hero-block.about-film .centered-copy {
+        a {
+            position: relative;
+            display: block;
+            clear: both;
+            margin: 108px auto 0;
+            left: auto;
+            right: auto;
+        }
+
+        .sentence {
+            h1 {
+                font-size: 18px;
+                margin-bottom: 18px;
+                margin-top: 10%;
+            }
+
+            p {
+                max-width: 400px;
+                line-height: 1.875;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+    // select box down arrow
+
+    fieldset {
+        max-width: 260px;
+        margin: 0 0 30px;
+        text-align: left;
+
+        label {
+            font-size: 16px;
+            font-weight: $font-weight-bold;
+            color: $gray_light;
+            margin: 0 0 15px 15px;
+            display: block;
+        }
+
+        .chosen-container,
+        .select-wrap {
+            max-width: 260px;
+        }
+
+        .chosen-container i {
+            font-size: 6px;
+            top: 12px;
+        }
+
+        .chosen-container>i {
+            display: none;
+        }
+    }
+
+    .fa-chevron-down:before {
+        content: "\6b";
+    }
+
+
+    .text-closing {
+        .inner {
+            max-width: 814px;
+        }
+    }
+}
+
+
+@media (min-width: 480px) {
+    .page-template-page-careers {}
+}
+
+@media (min-width: 508px) {
+    .page-template-page-careers {
+
+        .resume,
+        .copy-block {
+            h3 br {
+                display: inline;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $break768) {
+    .page-template-page-careers {
+
+        .role-title {
+            text-align: left;
+        }
+
+        .hero-block.about-film {
+            min-height: 25rem;
+        }
+
+        .hero-block.about-film .centered-copy .sentence {
+            h1 {
+                margin-top: 5%;
+                position: static !important;
+            }
+
+            a {
+                position: static !important; 
+                margin-top: 70px;
+            }
+        }
+
+        ul.heading {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+
+            > li {
+                flex-basis: 200px;
+                vertical-align: middle;
+            }
+        }
+
+        ul.listings li {
+
+            text-align: left;
+            justify-content: center;
+
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            h4,
+            p {
+                // flex-basis: 200px;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+            }
+
+            h4 {
+                order: 2;
+                flex-basis: 75%;
+                flex-grow: 1;
+            }
+
+            p {
+                order: 1;
+                flex-basis: 15%;
+                flex-grow: 0;
+            }
+        }
+
+        fieldset {
+            margin: 0;
+            max-width: 200px;
+
+            .chosen-container,
+            .select-wrap {
+                max-width: 200px;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 968px) {
+    .page-template-page-careers {
+        .job-listings {
+            padding-bottom: 100px;
+            max-width: 968px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .role-title {
+            font-size: 24px;
+            max-width: 778px;
+        }
+
+        .hero-block.about-film {
+            min-height: 30rem;
+        }
+
+        .hero-block.about-film .centered-copy .sentence {
+            h1 {
+                font-size: 36px;
+                margin-bottom: 35px;
+                margin-top: 70px;
+            }
+
+            p {
+                max-width: 580px;
+            }
+        }
+
+        ul.heading > li {
+            flex-basis: 260px;
+        }
+
+        ul.listings li {
+
+            h4,
+            p {
+                // flex-basis: 260px;
+                text-align: left;
+            }
+
+        }
+
+        fieldset {
+            max-width: 260px;
+
+            .chosen-container,
+            .select-wrap {
+                max-width: 260px;
+            }
+        }
+
+        .numbers-grid {
+            padding: 194px 25px 140px;
+        }
+    }
+}
+
+@media (min-width: $break1024) {
+    .page-template-page-careers {
+
+        .resume,
+        .copy-block {
+            padding: 195px 20px 203px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

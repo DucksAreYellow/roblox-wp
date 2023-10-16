@@ -1,0 +1,138 @@
+.two-cards {
+  background: #fafafa;
+  color: #000;
+
+  &__container {
+    padding: 94px 20px 0;
+    text-align: center;
+
+    @media (min-width: $break1024) {
+      padding: 200px 0;
+    }
+  }
+
+  &__title {
+    font-size: 38px;
+    line-height: 45.6px;
+    margin: 0 0 99px;
+
+    @media (min-width: $break868) {
+      font-size: 55px;
+      line-height: 69.3px;
+      margin: 0 0 108px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+
+    @media (min-width: $break868) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    background: #f1f0f5;
+
+    border-radius: 12px;
+    padding: 66px 31px 37px;
+    margin-bottom: 60px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $break868) {
+      margin: 0 17px;
+      width: calc(50% - 121px);
+      padding: 85px 52px 62px;
+      margin-bottom: 34px;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  &__title-card {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #000;
+    margin: 0;
+
+    @media (min-width: $break868) {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 50px;
+      height: 100%;
+    }
+  }
+
+  &__info-card {
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 40px 0 40px;
+    
+    @media (min-width: $break868) {
+      height: 100%;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  &__link-card {
+    color: #474747;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+
+    &:hover,
+    &:active,
+    &:focus {
+      &:after {
+        width: 100%;
+      }
+    }
+    
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      transition: width ease .2s;
+      width: 0;
+      height: 1px;
+      background: #000;
+    }
+
+    @media (min-width: $break868) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__trailing {
+    padding-top: 82px;
+  }
+
+  &__trailing-link {
+    color: $blue2;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

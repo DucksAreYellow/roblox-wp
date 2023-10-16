@@ -1,0 +1,39 @@
+/* === PRESS === */
+.press-grid { text-align: center; max-width: 1300px; margin: 0 auto; padding-bottom: 0px;
+	li { display: inline-block; max-width: 600px; border-width: 0 25px 45px; border-style: solid; border-color: transparent; transform: scale(1);
+		a { display: inline-block; }
+		.img-holder { overflow: hidden; margin-bottom: 21px;
+			img { transform: scale(1);
+			 	transition: transform 1s;
+			}
+		}
+		p { font-size: 14px; font-weight: $font-weight-medium; text-align: left; color: $white;
+			transition: color .25s;
+		}
+	}
+	li a:hover {
+		.img-holder img { transform: scale(1.05);
+			transition: transform .5s;
+		}
+		p { color: $primary_color; }
+	}
+}
+
+@media (min-width: $break968) {
+	.press-grid {
+		display: flex;
+		flex-flow: wrap;
+		padding: 0 25px 9px;
+		li {
+			border-width: 0 25px 39px;
+			max-width: none;
+			margin-bottom: 56px;
+			width: 50%;
+			box-sizing: border-box;
+			display: block;
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}

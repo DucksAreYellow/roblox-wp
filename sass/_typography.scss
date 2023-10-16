@@ -1,0 +1,10 @@
+/* === Default fonts === */
+h3, h2 { font-size: 24px; font-weight: 500; line-height: 1.2; }
+p { font-size: 16px; font-weight: $font-weight-book; line-height: 1.875; color: $text_light; }
+p strong,
+p b { font-weight: $font-weight-bold; }
+* { letter-spacing: .001em; }
+
+@media (min-width: $break1024) {
+	h3, h2 { font-size: 36px; margin-bottom: 22px; }
+}

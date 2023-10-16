@@ -1,0 +1,98 @@
+/* --- --- */
+
+$dd: dropdown;
+
+.#{$dd} {
+
+    position: relative;
+
+    &,
+    button,
+    &__menu-item,
+    &__menu-link {
+        font-size: calc(12/16 * 1rem);
+        line-height: 2;
+        letter-spacing: 0.2em;
+        font-weight: 700;
+        text-align: left;
+        text-overflow: ellipsis;
+        vertical-align: baseline;
+        color: $white;
+    }
+
+    button,
+    &__menu-link {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: auto;
+        min-height: calc(42/16 * 1rem);
+        width: 100%;
+        padding: 3px 40px 3px 15px;
+
+        background: $black;
+
+        &:not(.disabled).active,
+        &:not(.disabled):focus,
+        &:not(.disabled):hover {
+            background: $blue;
+            color: $black;
+        }
+
+        &:disabled,
+        &.disabled {
+            cursor: default;
+        }
+    }
+
+    button {
+        border: 1px solid $blue;
+        text-transform: uppercase;
+
+        background-image: url("/wp-content/themes/roblox/img/fliter.png");
+		background-color: $black;
+		background-size: 24px 19px;
+		background-repeat: no-repeat;
+		background-position: calc(100% - 20px) center;
+    }
+
+    &__menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+
+        border: 1px solid $blue;
+        border-top: none;
+
+        width: calc(100% - 2px);
+        max-height: 35vh;
+        overflow-y: scroll;
+    }
+
+    &__menu-item {
+        display: block;
+        width: 100%;
+        min-height: calc(42/16 * 1rem);
+    }
+
+    &__menu-link {
+        width: calc(100% - 40px - 15px)       
+    }
+
+    &:not(.disabled) {
+        &:not(.initialized):hover,
+        &:focus-within,
+        &:focus,
+        &.active {
+            .#{$dd}__menu {
+                display: block;
+            }
+        }
+    }
+
+    &.disabled {
+        opacity: 0.66;
+    }
+}

@@ -1,0 +1,178 @@
+.slideshow-wrap {
+    background-color: $black;
+    box-sizing: border-box;
+    padding: 50px 50px 140px;
+    position: relative;
+    width: calc(100%);
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2,
+    .toplabel {
+        color: $primary_color;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .025em;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+
+        &:before {
+            content: "\5C\A0";
+        }
+    }
+
+    blockquote {
+        margin-bottom: 22px;
+
+        span {
+            font-size: 36px;
+            font-weight: $font-weight-medium;
+            display: inline;
+            color: $primary_color;
+            line-height: 0;
+            position: relative;
+            top: 8px;
+            margin-right: 4px;
+        }
+
+        span:last-child {
+            margin-left: 4px;
+            top: 8px;
+        }
+
+        p {
+            color: $white;
+            font-size: 18px;
+            font-weight: $font-weight-medium;
+            line-height: 1.6;
+            display: inline;
+        }
+    }
+
+    cite {
+        font-size: 12px;
+        font-weight: $font-weight-bold;
+        color: $gray_light;
+    }
+
+    .slick-arrow {
+        background: $blackish url('img/ss-arrow-left.png') no-repeat center;
+        border: none;
+        bottom: 0;
+        cursor: pointer;
+        display: block !important;
+        font-size: 0;
+        margin: auto;
+        border-radius: 5px;
+        left: -36px;
+        width: 24px;
+        height: 48px;
+        background-size: 8px 28px;
+        opacity: .75;
+        position: absolute;
+        top: 0;
+        transition: background-color .25s, opacity .25s;
+        z-index: 3;
+
+        &:hover {
+            background-color: $primary_color;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .slick-next {
+        background-image: url('img/ss-arrow-right.png');
+        left: auto;
+        right: -36px;
+    }
+
+    .slick-disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .slick-dots {
+        bottom: -90px;
+        display: flex !important;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+
+        li {
+            align-items: center;
+            display: flex;
+        }
+
+        button {
+            background-color: $gray;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0;
+            height: 7px;
+            margin: 0 12px;
+            padding: 0;
+            width: 7px;
+        }
+
+        .slick-active button,
+        button:hover {
+            background-color: $primary_color;
+        }
+    }
+
+    .slick-slide:focus {
+        outline: none;
+    }
+}
+
+
+@media (min-width: $break1024) {
+    .slideshow-wrap {
+
+        h3,
+        .toplabel {
+            margin-bottom: 81px;
+        }
+
+        blockquote {
+            span {
+                font-size: 60px;
+                top: 12px;
+                margin-right: 4px;
+            }
+
+            span:last-child {
+                margin-left: 4px;
+                top: 16px;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        cite {
+            font-size: 16px;
+        }
+
+        .slick-arrow {
+            border-radius: 5px;
+            left: -128px;
+            width: 48px;
+            height: 95px;
+            background-size: 16px 56px;
+        }
+
+        .slick-next {
+            left: auto;
+            right: -128px;
+        }
+    }
+}

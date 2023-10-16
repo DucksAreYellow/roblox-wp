@@ -1,0 +1,15 @@
+#skip-to-content {
+	padding: 1em;
+	position: absolute;
+	top: -40px;
+	left: 1em;
+	z-index: 1000;
+	color: #000 !important;
+  }
+  
+  #skip-to-content:focus {
+	position: absolute;
+	top: 0;
+	background: #fff;
+  }
+  

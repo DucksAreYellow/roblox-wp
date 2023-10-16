@@ -1,0 +1,19 @@
+.page-template-page-parents {
+	.testimonials {
+		padding: 0 25px;
+		margin-bottom: 90px;
+	}
+
+	.slideshow-wrap .slick-arrow:active, .slideshow-wrap .slick-arrow:focus {
+		outline-color: #0f61db;
+	}
+}
+
+@media (min-width: $break968) {
+	.page-template-page-parents {
+		.testimonials {
+			padding: 0 80px;
+			margin-bottom: 203px;
+		}
+	}
+}

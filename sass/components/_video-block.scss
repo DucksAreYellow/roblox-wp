@@ -1,0 +1,132 @@
+/* --- video-block --- */
+.video-block {
+    position: relative;
+
+    video {
+        vertical-align: bottom;
+    }
+
+    .centered-copy {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .inner {
+        display: inline-block;
+        margin: -8px auto 0;
+        text-align: center;
+
+        text-shadow:    0px 0px 200px rgba(0,0,0,0.5),
+                        0px 0px 100px rgba(0,0,0,0.5),
+                        0px 0px 80px rgba(0,0,0,0.5),
+                        0px 0px 60px rgba(0,0,0,0.6),
+                        0px 0px 40px rgba(0,0,0,0.5),
+                        0px 0px 20px rgba(0,0,0,0.5);
+
+
+        h1,
+        h2 {
+            margin-bottom: 14px;
+            font-size: 30px;
+            font-weight: $font-weight-bold;
+            letter-spacing: 0;
+            color: $white;
+        }
+    }
+
+    .video-block__title span {
+        display: block;
+        margin-top: .25em;
+    }
+
+    .play-btn {
+        height: 54px;
+        cursor: pointer;
+        transform: scale(.5);
+    }
+}
+
+.video-block.alt {
+    iframe {
+        vertical-align: bottom;
+    }
+
+    img {
+        display: none;
+        vertical-align: bottom;
+    }
+
+    .inner {
+        padding: 20px;
+
+        h1,
+        h2 {
+            margin-bottom: 16px;
+            font-size: 36px;
+        }
+
+        h3,
+        span {
+            margin-bottom: 0;
+            font-size: 12px;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: .025em;
+        }
+    }
+}
+
+@media (min-width: $break768) {
+
+    /* --- video-block --- */
+    .video-block {
+
+        .inner h1,
+        h2 {
+            font-size: 68px;
+        }
+
+        .play-btn {
+            transform: none;
+        }
+    }
+
+    .video-block.alt {
+        .inner {
+
+            h1,
+            h2 {
+                font-size: 48px;
+            }
+
+            h3,
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $break968) {
+    .video-block.alt {
+        .inner {
+
+            h1,
+            h2 {
+                font-size: 72px;
+            }
+
+            h3,
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}

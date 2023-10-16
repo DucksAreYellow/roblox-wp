@@ -1,0 +1,41 @@
+.footnote_plugin_tooltip_text {
+    font-size: 0.6em;
+    color: $gray;
+}
+
+.footnote_tooltip {
+    background-color: $black !important;
+    color: $text_light !important;
+    border: 1px solid $blue !important;
+    border-radius: 0 !important;
+}
+
+div.footnote_container_prepare {
+    &,
+    & > p > span,   
+    & > p > span[onclick*="footnote_expand_reference_container"]:first-child {
+        font-size: 12px !important;
+        line-height: 1.2;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    & > p {
+        margin-top: 8em !important;
+        border-bottom: none !important;
+        border-top: 1px solid $gray !important
+    }
+
+    a#footnote_reference_container_collapse_button {
+        text-decoration: none;
+    }
+}
+
+.footnote-reference-container {
+    &, 
+    & td.footnote_plugin_index,
+    & td.footnote_plugin_link,
+    & td.footnote_plugin_text {
+        font-size: 12px !important;
+    }
+}

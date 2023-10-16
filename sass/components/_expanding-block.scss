@@ -1,0 +1,172 @@
+/* --- expanding-block --- */
+.expanding-block {
+    padding: 40px 25px;
+    text-align: center;
+
+    .img-holder {
+        display: inline-block;
+        max-width: 274px;
+        width: 90%;
+        padding-left: 0;
+        pointer-events: none;
+        box-sizing: border-box;
+
+        img.subimg {
+            margin-top: 52%;
+            display: none;
+        }
+    }
+
+    .copy {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 680px;
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .sub {
+        overflow: hidden;
+        visibility: hidden;
+        height: 0;
+    }
+
+    .sub .inner {
+        margin-bottom: 40px;
+    }
+
+    ul ul {
+        margin-bottom: 40px;
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 46px;
+            padding-left: 3px;
+            font-size: 18px;
+            font-weight: $font-weight-book;
+            line-height: 1.6;
+            list-style: disc;
+        }
+    }
+}
+
+.expanding-block,
+.slide {
+
+    button {
+        cursor: pointer;
+
+        span {
+            opacity: 1;
+            line-height: 1.5;
+            transition: opacity 1s;
+        }
+    }
+
+    button.read-more-close {
+        opacity: 0;
+        visibility: hidden;
+        height: 0px;
+        transition: .25s
+    }
+
+    button.close-open {
+        opacity: .9999;
+        visibility: visible;
+        transition: 1s;
+    }
+
+    button.read-more-open {
+        opacity: .9999;
+        visibility: visible;
+        transition: .75s;
+        transition-delay: .4s;
+    }
+
+    button.close-close {
+        opacity: 0;
+        visibility: hidden;
+        height: 0px;
+        transition: .75s;
+    }
+
+    button.no-margin {
+        margin: 0px;
+    }
+
+    button.bio {
+        border: none;
+        font-size: 12px;
+        font-family: "HCo Gotham SSm";
+        margin-top: 10px;
+        width: auto;
+        color: #cccdd3;
+        background-color: transparent;
+        height: auto;
+        padding: 0px;
+        text-transform: capitalize;
+        letter-spacing: normal;
+
+        &.closebtn {
+
+            &:before {
+                content: '\00D7';
+                font-weight: bold;
+                font-size: 150%;
+                line-height: 1;
+                margin-right: 0.25em;
+            }
+        }
+
+        &:hover {
+            color: $blue;
+
+            & span {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $break768) {
+
+    /* --- expanding-block --- */
+    .expanding-block {
+        padding: 40px 20px;
+
+        .img-holder {
+            max-width: none;
+            width: 39%;
+        }
+
+        .copy {
+            padding-top: 3%;
+        }
+
+        p {
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+@media (min-width: $break1024) {
+    .expanding-block .img-holder {
+        width: 34%;
+    }
+
+    .expanding-block.open .img-holder img.subimg {
+        display: block;
+    }
+}
+
+@media (min-width: $break1100) {
+    .expanding-block .img-holder {
+        width: 39%;
+    }
+}

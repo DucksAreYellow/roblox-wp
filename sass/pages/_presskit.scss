@@ -1,0 +1,14 @@
+.page-template-page-press-kit .hero-block .centered-copy h1 { top: -8%; }
+.page-template-page-press-kit .inquiry {
+	padding: 20px 20px 80px;
+	text-align: center;
+}
+
+@media (min-width: $break768) {
+	.page-template-page-press-kit .newsletter { margin-bottom: 126px; margin-top: 102px; }
+	.page-template-page-press-kit .hero-block .centered-copy h1 { top: -1%; }
+	.page-template-page-press-kit .inquiry {
+		padding: 85px 20px 190px;
+	}
+}
+

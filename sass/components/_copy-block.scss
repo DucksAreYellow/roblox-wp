@@ -1,0 +1,17 @@
+.copy-block { margin-bottom: 90px; text-align: center;
+	p { max-width: 1170px; margin-right: auto; margin-left: auto; font-size: 18px; }
+}
+.copy-block.working { margin-bottom: 78px; 
+	h3 { margin-bottom: 22px; }
+}
+
+
+@media (min-width: $break1024) {
+	.copy-block {
+		p { font-size: 24px; }
+	}
+
+	.copy-block.working {
+		p { font-size: 18px; max-width: 860px; margin: 0 auto; }
+	}
+}

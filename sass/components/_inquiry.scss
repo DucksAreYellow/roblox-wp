@@ -1,0 +1,16 @@
+.inquiry { max-width: 990px; margin: 0 25px; padding: 50px 0 50px; text-align: center; 
+	h3 { margin-bottom: 18px; letter-spacing: 0; }
+}
+
+.inquiry.press { border-bottom: none; clear: both; }
+.inquiry.sales { padding: 84px 20px 84pxgem pristine atomic --version 1.1.14; }
+.inquiry.sales p { font-weight: $font-weight-bold; line-height: 1.21; max-width: 650px; margin: 0 auto; }
+
+@media (min-width: $break768) {
+	/* === PRESS === */
+	.inquiry { padding: 85px 20px 92px; margin: 0 auto; 
+		h3 { margin-bottom: 35px; }
+		p { font-size: 16px; }
+	}
+	.inquiry.sales { padding: 112px 20px 112px; }
+}

@@ -1,0 +1,111 @@
+/* --- hero-block --- */
+.page-template-page-home {
+
+    .admin-bar .hero-block,
+    .hero-block {
+        min-height: auto;
+    }
+}
+
+.touch .hero-block.home {
+    min-height: 0 !important;
+}
+
+.home .expanding-block {
+    padding: 120px 25px 120px;
+
+    .copy>h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+
+}
+
+@media (min-width: $break768) {
+    .home .expanding-block {
+        padding: 238px 50px 246px;
+    }
+}
+
+@media (min-width: $break968) {
+    .home {
+        .expanding-block {
+            .copy>h3 {
+                font-size: 36px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+}
+
+.page-template-page-home {
+    .img-block {
+        padding: 0 !important;
+
+        .hero-block.about-film {
+            margin: 0px !important;
+            height: 0;
+            padding-top: 56.25%; // maintain proportional height
+
+            .centered-copy .inner {
+                a,
+                button {
+                    left: 0;
+                    margin: 0;
+
+                    @media (max-width: $break508) {
+                        height: 33px;
+                        background: transparent url(img/play-btn-video.png) no-repeat center 0px;
+                        background-size: 30px 30px;
+                        padding-top: 24px;
+                        padding-right: 0;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+.page-template-page-home {
+    .featured-block {
+        margin-top: 0 !important;
+    }
+
+    .careers-cta {
+        &__title {
+
+            p,
+            h2 {
+                max-width: 580px;
+                margin: 0 auto;
+
+                @media (max-width: $break968) {
+                    font-size: 27px;
+                    max-width: 530px;
+                }
+            }
+
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            a {
+                @media (max-width: $break480) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: $break375) {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
